@@ -66,7 +66,7 @@ colNames  = colnames(finalData);
 for (i in 1:length(colNames)) 
 {
         colNames[i] = gsub("\\()","",colNames[i])
-        colNames[i] = gsub("-std$","StdDev",colNames[i])
+        colNames[i] = gsub("-std$","StandardDeviation",colNames[i])
         colNames[i] = gsub("-mean","Mean",colNames[i])
         colNames[i] = gsub("^(t)","time",colNames[i])
         colNames[i] = gsub("^(f)","freq",colNames[i])
